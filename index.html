@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPI real-time index</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="deskContainer">
+        <h1>Code : <span id="code">CHOOSE</span></h1>
+        <hr>
+        <div>
+            <p>Rate : <span id="rate"></span></p>
+            <p>Description : <span  id="description"></span></p>
+            <p>Updated : <span id="updated"></span></p>
+        </div>
+    </div>
+    <div>
+        <form id="myForm">
+            <select name="selectCode" id="s_code">
+                <option>-- choose a code --</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button id="fetchData">Get data</button>
+        </form>
+    </div>
+    <small style="color: red;" id="notification"></small>
+    <small style="color: green;" id="nofication-success"></small>
+
+
+    <address>
+        Email : adityanayak5505@gmail.com
+    </address>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
